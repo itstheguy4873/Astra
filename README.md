@@ -8,9 +8,9 @@ Astra is a tool designed to enchance Roblox by providing features not currently 
 Astra is available for Windows only.
 
 **The only official downloads for Astra are this repository.**
-**Any other website is not owned by me and can potentially be malware.**
+**Any other website can potentially be malware.**
 
-# Installing
+# Install
 
 You can get Astra from [releases](https://github.com/itstheguy4873/Astra/releases).
 
