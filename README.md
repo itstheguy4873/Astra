@@ -14,7 +14,7 @@ Astra is available for Windows only.
 
 You can get Astra from [releases](https://github.com/itstheguy4873/Astra/releases).
 
-If your antivirus software flags Astra as malicious, it doesn't mean anything. It just does this because it doesn't recognize Astra.
+If your antivirus software flags Astra as malicious, it doesn't mean anything. It just does this because it doesn't recognize it.
 
 If you encounter any problems, feel free to open an [issue](https://github.com/itstheguy4873/Astra/issues).
 
