@@ -1,21 +1,21 @@
-![restrap_logo](https://github.com/user-attachments/assets/5f9291a5-f801-4a77-bc5e-cb65435f9245)
+![Logo]()
 
 # About
 
-breezeMod is a tool designed to enchance Roblox by providing features not currently available in the client.
+Astra is a tool designed to enchance Roblox by providing features not currently available in the client.
 
-breezeMod is available for Windows only.
+Astra is available for Windows only.
 
-**The only official downloads for breezeMod are this repository and the** [website](https://sites.google.com/view/restrap-roblox).\
+**The only official downloads for Astra are this repository.**
 **Any other website is not owned by me and can potentially be malware.**
 
 # Installing
 
-You can get breezeMod from [releases](https://github.com/itstheguy4873/restrap/releases).
+You can get Astra from [releases](https://github.com/itstheguy4873/Astra/releases).
 
-If your antivirus software flags restrap as malicious, it doesn't mean anything. It just does this because it doesn't recognize breezeMod.
+If your antivirus software flags Astra as malicious, it doesn't mean anything. It just does this because it doesn't recognize breezeMod.
 
-If you encounter any problems, feel free to open an [issue](https://github.com/itstheguy4873/restrap/issues).
+If you encounter any problems, feel free to open an [issue](https://github.com/itstheguy4873/Astra/issues).
 
 # Features
 
@@ -25,7 +25,7 @@ If you encounter any problems, feel free to open an [issue](https://github.com/i
 # Credits
 
 [Bloxstrap](https://github.com/bloxstraplabs/bloxstrap/) for the idea\
-rdbende for the [tkinter Azure theme](https://github.com/rdbende/Azure-ttk-theme)\
-[PyInstaller](https://pyinstaller.org/) was used to build restrap.\
-If you are the creator of anything used to create restrap and were not properly credited, you can open an [issue](https://github.com/itstheguy4873/restrap/issues).
+Tom Schimansky for [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter)\
+[PyInstaller](https://pyinstaller.org/) was used to build Astra.\
+If you are the creator of anything used to create Astra and were not properly credited, you can open an [issue](https://github.com/itstheguy4873/restrap/issues).
 
