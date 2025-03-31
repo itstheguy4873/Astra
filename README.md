@@ -25,7 +25,7 @@ If you encounter any problems, feel free to open an [issue](https://github.com/i
 
 # Forking
 
-If you want to mess with new, experimental features, check out the [testing repository.](https://github.com/itstheguy4873/Astra-Test)\n
+If you want to mess with new, experimental features, check out the [testing repository.](https://github.com/itstheguy4873/Astra-Test)\
 Astra is open source software licensed under the [MIT License], so modify and distribute as you please.
 
 # Credits
