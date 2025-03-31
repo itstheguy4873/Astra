@@ -3,8 +3,6 @@
 
 # About
 
-### The testing repository can be found [here](https://github.com/itstheguy4873/Astra-Test/).
-
 Astra is a tool designed to enchance Roblox by providing features not currently available in the client.
 
 Astra is available for Windows only.
@@ -24,6 +22,14 @@ If you encounter any problems, feel free to open an [issue](https://github.com/i
 
 * Ability to manage FastFlags
 * Actively being developed
+
+# Forking
+
+### The testing repository can be found [here](https://github.com/itstheguy4873/Astra-Test/).
+
+Astra is open source software, and is licensed under the MIT license.
+As such, it may be freely modified and distributed. If you want to mess with new, experimental
+features, you can fork the Astra Testing Repository, found above.
 
 # Credits
 
