@@ -3,7 +3,7 @@
 
 # About
 
-**The testing repository can be found [here](https://github.com/itstheguy4873/Astra-Test/).**
+##The testing repository can be found [here](https://github.com/itstheguy4873/Astra-Test/).
 
 Astra is a tool designed to enchance Roblox by providing features not currently available in the client.
 
