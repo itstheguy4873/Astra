@@ -29,9 +29,5 @@ Astra is open source software licensed under the [MIT License](https://github.co
 
 [Bloxstrap](https://github.com/bloxstraplabs/bloxstrap/) for the idea
 
-Tom Schimansky for [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter)
-
-[PyInstaller](https://pyinstaller.org/) was used to build Astra
-
 If you can prove you are the creator of anything used to create Astra and were not properly credited, please open an [issue](https://github.com/itstheguy4873/restrap/issues).
 
