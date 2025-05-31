@@ -25,7 +25,8 @@ Astra is open source software licensed under the [MIT License](https://github.co
 
 # Credits
 
-[Bloxstrap](https://github.com/bloxstraplabs/bloxstrap/) for the idea
+[Bloxstrap](https://github.com/bloxstraplabs/bloxstrap/) for the initial idea  
+[Sinewave](https://github.com/Mediccc/Sinewave) for UI inspiration
 
 If you can prove you are the creator of anything used to create Astra and were not properly credited, please open an [issue](https://github.com/itstheguy4873/restrap/issues).
 
