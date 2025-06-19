@@ -32,6 +32,35 @@ themes = {
     }
 }
 
+extractroots = {
+    "RobloxApp.zip": "",
+    "redist.zip": "",
+    "shaders.zip": "shaders/",
+    "ssl.zip": "ssl/",
+
+    "WebView2.zip": "",
+    "WebView2RuntimeInstaller.zip": "WebView2RuntimeInstaller/",
+
+    "content-avatar.zip": "content/avatar/",
+    "content-configs.zip": "content/configs/",
+    "content-fonts.zip": "content/fonts/",
+    "content-sky.zip": "content/sky/",
+    "content-sounds.zip": "content/sounds/",
+    "content-textures2.zip": "content/textures/",
+    "content-models.zip": "content/models/",
+
+    "content-platform-fonts.zip": "PlatformContent/pc/fonts/",
+    "content-platform-dictionaries.zip": "PlatformContent/pc/shared_compression_dictionaries/",
+    "content-terrain.zip": "PlatformContent/pc/terrain/",
+    "content-textures3.zip": "PlatformContent/pc/textures/",
+
+    "extracontent-luapackages.zip": "ExtraContent/LuaPackages/",
+    "extracontent-translations.zip": "ExtraContent/translations/",
+    "extracontent-models.zip": "ExtraContent/models/",
+    "extracontent-textures.zip": "ExtraContent/textures/",
+    "extracontent-places.zip": "ExtraContent/places/"
+}
+
 def parse(filepath):
     config = {}
     try:
@@ -105,13 +134,25 @@ def setfont(fontname, fontsize): #i dont know if this the best way to do it but 
             break
     return (name, fontsize)
 
+configpath = Path(base / 'assets' / 'config' / '.astra')
+
 def cleanup():
     logging.info(f'Application {sys.argv[0]} closed, cleaning up')
-    config = parse(base / 'assets' / 'config' / '.astra')
-    fontname = config.get('Font', 'inter')
+    fontname = parse(configpath).get('Font', 'inter')
     fontpath = getasset(fontname, 'font')
     ctypes.windll.gdi32.RemoveFontResourceW(fontpath)
     logging.info(f'Removed font {fontname} from memory')
 
     logging.info('Done, closing')
     sys.exit()
+
+def centerwindow(win, width, height):
+    win.update_idletasks()
+
+    screen_width = win.winfo_screenwidth()
+    screen_height = win.winfo_screenheight()
+
+    x = (screen_width // 2) - (width // 2)
+    y = (screen_height // 2) - (height // 2)
+
+    win.geometry(f"{width}x{height}+{x}+{y}")

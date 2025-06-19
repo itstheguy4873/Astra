@@ -1,19 +1,16 @@
 import customtkinter as tk
 import tkinter as ntk
-import sys
-from util_toolbox import parse, themes, getasset, base, setfont, cleanup, write
+from util_toolbox import parse, themes, getasset, base, setfont, cleanup, write, configpath, centerwindow
 from customtkinter import set_appearance_mode
-from pathlib import Path
 from PIL import Image
 
 def config():
 
     main = tk.CTk()
 
-    main.geometry('600x300')
+    centerwindow(main, 600, 300)
     main.title('Configure Astra')
 
-    configpath = Path(base / 'assets' / 'config' / '.astra')
     config = parse(configpath)
     theme = config.get('Theme', 'Light')
     version = config.get('Version', 'x.x.x')

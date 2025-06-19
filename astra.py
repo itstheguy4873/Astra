@@ -1,9 +1,10 @@
 import customtkinter as tk
 import tkinter as ntk
-from util_toolbox import parse, themes, getasset, base, setfont, cleanup
+from util_toolbox import parse, themes, getasset, base, setfont, cleanup, configpath, centerwindow
 from customtkinter import set_appearance_mode
 from PIL import Image
 from config import config
+from launcher import launch
 import sys
 import darkdetect
 import logging
@@ -15,11 +16,13 @@ if len(sys.argv) > 1:
     
     if uri == '--config'.lower():
         config()
+    if uri == '--app'.lower():
+        launch('app')
 
-config = parse(base / 'assets' / 'config' / '.astra')
-theme = config.get('Theme', 'Light')
-version = config.get('Version', 'x.x.x')
-font = config.get('Font', 'Inter')
+pconfig = parse(configpath)
+theme = pconfig.get('Theme', 'Light')
+version = pconfig.get('Version', 'x.x.x')
+font = pconfig.get('Font', 'Inter')
 
 globalfont = setfont(font,24)
 
@@ -30,7 +33,7 @@ if theme == 'System':
         theme = 'Light'
 
 main = tk.CTk()
-main.geometry("400x150")
+centerwindow(main, 400, 150)
 main.title(f'Astra {version}')
 main.resizable(False, False)
 
@@ -38,7 +41,7 @@ set_appearance_mode(theme)
 main.configure(bg_color=themes[theme]['bg_color'])
 main.iconbitmap(getasset('logo', 'icon', theme))
 
-falsebg = ntk.Frame(master=main, background=themes[theme]['bg_color']) #i hate windows 11 with a fiery passion
+falsebg = ntk.Frame(master=main, background=themes[theme]['bg_color']) #i hate windows 11
 falsebg.pack(expand=True, fill='both')
 
 logoimage = Image.open(getasset('logo', 'image', theme))
